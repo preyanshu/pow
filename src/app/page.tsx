@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo, useEffect, useRef } from 'react';
-import * as Select from '@radix-ui/react-select';
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { ChevronDownIcon, CheckIcon, ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import configData from '@/config/data.json';
@@ -29,10 +28,10 @@ export default function Home() {
     return window.innerWidth <= 768;
   };
 
-  const handleLiveLinkClick = (e: React.MouseEvent, project: any) => {
+  const handleLiveLinkClick = (e: React.MouseEvent, project: { desktopOnly?: boolean; liveLink?: string }) => {
     if (project.desktopOnly && isMobile()) {
       e.preventDefault();
-      setPendingLink(project.liveLink);
+      setPendingLink(project.liveLink || null);
       setShowDesktopWarning(true);
     }
   };
@@ -50,7 +49,6 @@ export default function Home() {
     
     const project = projects[fullscreenMedia.projectIndex];
     const hasVideo = project.video && project.video.trim() !== '';
-    const totalItems = (hasVideo ? 1 : 0) + (project.photos?.length || 0);
     
     let newType = fullscreenMedia.type;
     let newIndex = fullscreenMedia.currentIndex;
@@ -109,7 +107,7 @@ export default function Home() {
       
       return matchesSearch && matchesTag;
     });
-  }, [searchTerm, selectedTags]);
+  }, [searchTerm, selectedTags, projects]);
 
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
   const startIndex = (currentPage - 1) * projectsPerPage;
@@ -186,7 +184,7 @@ export default function Home() {
     }));
   };
 
-  const nextCarouselItem = (projectIndex: number, project: any) => {
+  const nextCarouselItem = (projectIndex: number, project: { video?: string; photos?: string[] }) => {
     const state = getCarouselState(projectIndex);
     const hasVideo = project.video && project.video.trim() !== '';
     const totalPhotos = project.photos?.length || 0;
@@ -210,7 +208,7 @@ export default function Home() {
     showCarouselControls(projectIndex);
   };
 
-  const prevCarouselItem = (projectIndex: number, project: any) => {
+  const prevCarouselItem = (projectIndex: number, project: { video?: string; photos?: string[] }) => {
     const state = getCarouselState(projectIndex);
     const hasVideo = project.video && project.video.trim() !== '';
     const totalPhotos = project.photos?.length || 0;
@@ -560,9 +558,6 @@ export default function Home() {
                       )}
                     </div>
                     <div className="win-date">{win.date}</div>
-                    {win.note && (
-                      <div className="win-note">{win.note}</div>
-                    )}
                   </div>
                 </div>
               </div>
