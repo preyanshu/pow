@@ -234,6 +234,7 @@ export default function Home() {
     showCarouselControls(projectIndex);
   };
 
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -402,7 +403,12 @@ export default function Home() {
                   <div className="carousel-content">
                     {hasVideo && carouselState.isVideo ? (
                       <div className="video-container" onClick={() => handleMediaClick('video', project.video, index, 0)}>
-                        <video controls width="100%" height="300">
+                        <video 
+                          controls 
+                          width="100%" 
+                          height="300"
+                          onClick={(e) => e.stopPropagation()}
+                        >
                           <source src={project.video} type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>

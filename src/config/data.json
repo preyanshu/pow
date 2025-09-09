@@ -302,7 +302,9 @@
           "liveLink": "https://dscvr.one/post/1201336802623881354",
           "description": "a social-media integrated nft reward platform built on solana, enabling users to mint rare achievement-based nfts with limited supply. features include wallet connection, personalized dashboards with leaderboards, profile-linked nft achievements, supply tracking, and exclusive rewards. built with react + vite frontend, dscvr sdk/api integration, metaplex core standard for nft minting, and rust-based anchor smart contracts for secure and scalable operations.",
           "photos": [
+            "./projects/trophymint/img2.png",
             "./projects/trophymint/img.png"
+            
           ],
           "tags": [
             "react",
@@ -319,7 +321,123 @@
             "leaderboard",
             "smart contracts"
           ]
+        } , 
+        {
+          "title": "Pyramid Fund",
+          "link": "https://github.com/preyanshu/pyramid_fund",
+          "liveLink": "https://pyramid-fund.vercel.app/",
+          "description": "a web3-powered referral-based crowdfunding platform that creates a pyramid of faith, allowing users to launch campaigns, contribute with referral links, and earn multi-level rewards. features include campaign creation, referral-based contributions, automated reward distribution, fund withdrawal, exponential network growth, and transparent blockchain-based transactions. built with react frontend, xion testnet smart contracts, and account-abstraction for gasless contributions.",
+          "photos": [
+            "./projects/pyramidfund/img.png",
+            "./projects/pyramidfund/img2.png",
+            "./projects/pyramidfund/img3.png",
+            "./projects/pyramidfund/img4.png",
+            "./projects/pyramidfund/img5.png",
+            "./projects/pyramidfund/img6.png"
+          ],
+          "tags": [
+            "react",
+            "web3",
+            "xion",
+            "solana",
+            "smart contracts",
+            "crowdfunding",
+            "referral system",
+            "gasless transactions",
+            "blockchain",
+            "decentralized",
+            "frontend",
+            "dashboard"
+          ]
+        }, 
+        {
+          "title": "Campaign Governance Platform",
+          "link": "https://github.com/preyanshu/CampaignChain",
+          "liveLink": "https://dscvr.one/post/1201336802623881355",
+          "description": "a decentralized campaign management platform built on solana, enabling users to create one campaign per wallet, manage donations, and securely withdraw funds. features include single-campaign restriction per wallet, transparent on-chain donation tracking, fund withdrawal, and alignment with solana governance standards. built with react + vite frontend and anchor-based solana smart contracts for secure, scalable, and decentralized operations.",
+          "photos": [
+            "./projects/campaigngovernance/img.png",
+            "./projects/campaigngovernance/img2.png",
+            "./projects/campaigngovernance/img3.png"
+          ],
+          "tags": [
+            "react",
+            "vite",
+            "solana",
+            "anchor",
+            "rust",
+            "smart contracts",
+            "decentralized",
+            "campaign management",
+            "donation tracking",
+            "fund withdrawal",
+            "on-chain transparency",
+            "governance"
+          ]
+        },
+        
+        {
+          "title": "RhythmMural",
+          "link": "https://t.me/beatverse_bot/rhythmural",
+          "liveLink": "https://rhythm-mural.vercel.app",
+          "description": "a decentralized, community-driven music contest telegram mini-app where users create daily theme-based tracks, vote on favorites, and earn rewards. features include ai-powered music generation, community voting, nft minting for winning tracks, automated reward distribution, and transparent on-chain engagement. rewards are shared by both creators and voters, with winning tracks forming part of a permanent, community-curated musical mural. built with react + next frontend, solidity smart contracts, and ethers/web3 integration.",
+          "video": "./projects/rhythmmural/video.mp4",
+          "photos": [
+            "./projects/rhythmmural/img.png",
+            "./projects/rhythmmural/img2.png",
+            "./projects/rhythmmural/img3.png",
+            "./projects/rhythmmural/img4.png",
+            "./projects/rhythmmural/img5.png",
+            "./projects/rhythmmural/img6.png",
+            "./projects/rhythmmural/img7.png"
+          ],
+          "tags": [
+            "react",
+            "nextjs",
+            "tailwindcss",
+            "solidity",
+            "ethers",
+            "web3",
+            "nft",
+            "music",
+            "ai music generation",
+            "community voting",
+            "reward distribution",
+            "decentralized"
+          ]
+        },
+        {
+          "title": "Motion Amplification Vibration Monitoring System",
+          "link": "https://github.com/preyanshu/video_magnification",
+          "description": "a vibration monitoring system that leverages eulerian and phase-based video magnification algorithms to detect subtle human and machine vibrations. features include real-time health monitoring (heart rate, respiratory rate), machinery diagnostics (engine defect detection), and motion magnification visualization. built with react frontend, flask/python for magnification and ml models, and node.js api servers for orchestration. designed for universal device compatibility across web, windows, and android.",
+          "photos": [
+            "./projects/videomagnification/img.png",
+            "./projects/videomagnification/img2.png",
+            "./projects/videomagnification/img3.png",
+            "./projects/videomagnification/img4.png",
+            "./projects/videomagnification/img5.png",
+            "./projects/videomagnification/img6.png"
+          ],
+          "tags": [
+            "react",
+            "flask",
+            "opencv",
+            "tensorflow",
+            "keras",
+            "python",
+            "nodejs",
+            "video magnification",
+            "computer vision",
+            "machine learning",
+            "real-time monitoring",
+            "health analysis",
+            "engine diagnostics"
+          ]
         }
+        
+        
+        
+        
         
         
         
