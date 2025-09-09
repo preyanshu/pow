@@ -1,0 +1,510 @@
+{
+  "profile": {
+    "name": "Hi, I'm Preyanshu",
+    "bio": [
+      "Building crypto infrastructure. Shipping products that matter."
+    ],
+    "image": "https://pbs.twimg.com/profile_images/1957678327575244801/gx86xvds_400x400.jpg",
+    "socials": {
+      "twitter": "https://twitter.com/yourusername",
+      "github": "https://github.com/yourusername"
+    }
+  },
+  "tabs": {
+    "proof-of-work": {
+      "title": "proof of work",
+      "projects": [ 
+        {
+          "title": "wysiwyg schema builder",
+         
+          "liveLink": "https://schemabuilder.preyanshu.me",
+          "desktopOnly": true,
+          "description": "a wysiwyg schema builder integrated with the schema-parser backend. it dynamically generates ui schemas from json schemas and merges them with preexisting ui schemas for seamless editing. optimized for large json handling with debouncing, batching, and in-memory caching. features include lazy loading of nested structures, url-embedded folder navigation, and schema loading from files or apis. built to simplify schema-driven app development while keeping iteration fast and scalable.",
+          "video": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+          "photos": [
+            "./projects/schema-builder/img.png",
+            "./projects/schema-builder/img2.png",
+            "./projects/schema-builder/img3.png",
+            "./projects/schema-builder/img4.png",
+            "./projects/schema-builder/img5.png",
+            "./projects/schema-builder/img6.png",
+            "./projects/schema-builder/img7.png",
+            "./projects/schema-builder/img8.png"
+           
+          ],
+          "tags": [
+            "frontend",
+            "schema",
+            "wysiwyg",
+            "json",
+            "workflow",
+            "schema-parser",
+            "ui-schema",
+            "dynamic ui generation",
+            "in-memory caching",
+            "debouncing",
+            "batch updates",
+            "lazy loading",
+            "url navigation",
+            "developer tools",
+            "private"
+          ]
+        }
+        ,
+      {
+        "title": "on-chain vfs explorer",
+        "link": "https://github.com/user/vfs-explorer",
+        "description": "an on-chain virtual file system explorer for fast navigation through decentralized storage. it supports in-memory caching for instant access, lazy loading of nested folders, full keyboard navigation, and the ability to open predefined paths directly. designed to handle large directory structures efficiently while keeping the interface minimal and responsive.",
+        "liveLink": "https://explorer.preyanshu.me",
+        "photos": [
+          "./projects/vfs/img.png",
+          "./projects/vfs/img2.png",
+          "./projects/vfs/img3.png",
+          "./projects/vfs/img4.png"
+
+          
+        ],
+        "tags": [
+          "react",
+          "typescript",
+          "nextjs",
+          "highly functional frontend",
+          "logic-heavy frontend",
+          "blockchain",
+          "on-chain"
+        ]
+      },
+      {
+        "title": "Rust-based Solana DeFi Liquidation Detector",
+        "link": "https://github.com/preyanshu/liquidation-indexer",
+        "description": "rust-based liquidation indexer for drift protocol on solana using yellowstone gRPC. supports real-time liquidation detection, webhook alerts with configurable severity, and postgres integration for persistent indexing. built with focus on reliability, scalability, and extensibility for defi risk monitoring.",
+        "photos": [
+          "./projects/liquidation-indexer/img.png",
+          "./projects/liquidation-indexer/img2.png"
+        ],
+        "tags": [
+          "rust",
+          "solana",
+          "drift protocol",
+          "yellowstone gRPC",
+          "blockchain backend",
+          "postgres",
+          "webhooks",
+          "real-time alerts",
+          "defi monitoring",
+          "indexer"
+        ]
+      }
+,
+      {
+        "title": "DataSculpt - Decentralized AI Dataset Platform",
+        "link": "https://github.com/preyanshu/datasculpt",
+        "liveLink": "https://datasculpt.vercel.app",
+        "description": "decentralized platform on aptos for generating high-integrity ai datasets, where users design task frameworks, contributors are autonomously compensated, and a reputation layer enforces reliability and accuracy. supports csv dataset uploads, automated payouts, and real-time dashboards for both creators and workers. built to promote privacy, fairness, and transparency in collaborative data generation.",
+    
+        "photos": [
+        
+          "./projects/datasculpt/img.png",
+          "./projects/datasculpt/img2.png",
+          "./projects/datasculpt/img3.png",
+          "./projects/datasculpt/img4.png",
+          "./projects/datasculpt/img5.png",
+          "./projects/datasculpt/img6.png",
+          "./projects/datasculpt/img7.png",
+          "./projects/datasculpt/img8.png",
+          "./projects/datasculpt/img9.png"
+
+        ],
+        "tags": [
+          "nextjs",
+          "tailwindcss",
+          "framer motion",
+          "aptos",
+          "move",
+          "blockchain",
+          "smart contracts",
+          "decentralized ai",
+          "datasets",
+          "reputation system"
+        ]
+      }
+
+       ,
+        {
+          "title": "clean react block explorer component",
+          "link": "https://github.com/preyanshu/listdemov2/tree/main/app",
+          "liveLink": "https://block.preyanshu.me/blocklist",
+          "description": "built a highly performant block explorer react component with server-side rendering and incremental static regeneration. supports real-time block indexing, in-memory caching, lazy loading, and paginated block/transaction views. optimized for speed, scalability, and seo while providing a clean, functional ui",
+          "photos": [
+            "./projects/blocklist/img.png",
+            "./projects/blocklist/img2.png",
+            "./projects/blocklist/img3.png",
+            "./projects/blocklist/img4.png"
+          ],
+          "tags": [
+            "react",
+            "typescript",
+            "nextjs",
+            "frontend",
+            "component",
+            "highly functional frontend",
+            "logic-heavy frontend",
+            "blockchain ui",
+            "real-time indexing"
+          ]
+        } ,
+        {
+          "title": "PayThree – Payroll & ESOPs for web3",
+          "link": "https://github.com/preyanshu/paythree",
+          "liveLink": "https://hrpaythreee-rho.vercel.app/",
+          "description": "payroll and esop management platform on morph evm, enabling batch payouts, automated vesting, and on-chain transparency. it streamlines payroll with employee portals, instant notifications, and borderless, bank-free settlements while leveraging morph’s low-fee infrastructure. supports hr portal, employee portal, and organization-specific smart contracts for secure and scalable payroll operations.",
+          "photos": [
+            "./projects/paythree/img.png",
+            "./projects/paythree/img2.png",
+            "./projects/paythree/img3.png",
+            "./projects/paythree/img4.png",
+            "./projects/paythree/img5.png",
+            "./projects/paythree/img6.png",
+            "./projects/paythree/img7.png",
+            "./projects/paythree/img8.png"
+          ],
+          "tags": [
+            "nextjs",
+            "tailwindcss",
+            "framer motion",
+            "solidity",
+            "evm",
+            "morph",
+            "smart contracts",
+            "payroll",
+            "esop",
+            "blockchain backend",
+            "hr tech",
+            "dao tools"
+          ]
+        } , 
+        {
+          "title": "Vincent AI – Universal Blockchain Intelligence Agent for the Sei Ecosystem",
+          "link": "https://github.com/preyanshu/vincent-ai",
+          "liveLink": "https://vincentagent.preyanshu.me",
+          "description": "blockchain intelligence agent for the Sei ecosystem, enabling real-time wallet analysis, memecoin research, automated monitoring, and safe transactions with AI-powered insights. integrates 50+ tools natively for Sei to provide multi-source intelligence fusion, persistent AI research, smart transaction execution, and advanced monitoring jobs with logs and optimization.",
+          "photos": [
+            "./projects/vincent/img.png",
+            "./projects/vincent/img2.png",
+            "./projects/vincent/img3.png",
+            "./projects/vincent/img4.png",
+            "./projects/vincent/img5.png"
+       
+          ],
+          "tags": [
+            "nextjs",
+            "tailwindcss",
+            "framer motion",
+            "sei",
+            "blockchain intelligence",
+            "ai agent",
+            "wallet analysis",
+            "memecoin research",
+            "monitoring",
+            "redis",
+            "microservices",
+            "job runner",
+            "smart contracts",
+            "gas optimization",
+            "real-time analytics"
+          ]
+        } , 
+        {
+          "title": "ChainPay – Peer-to-Peer Crypto Payment Platform",
+          "link": "https://github.com/preyanshu/chainpay",
+          "liveLink": "https://chainpay.preyanshu.me",
+          "description": "chainpay is a truly peer-to-peer crypto payment platform for freelancers, businesses, and developers. it eliminates intermediaries by enabling direct on-chain transactions, offering full ownership, instant settlement, and complete transparency. supports branded payment links, auto-generated invoices, automated reminders, multiple tokens, real-time on-chain detection, and webhook-based custom automation.",
+          "photos": [
+            "./projects/chainpay/img.png",
+            "./projects/chainpay/img2.png",
+            "./projects/chainpay/img3.png",
+            "./projects/chainpay/img4.png",
+            "./projects/chainpay/img5.png",
+            "./projects/chainpay/img6.png",
+            "./projects/chainpay/img7.png"
+          ],
+          "tags": [
+            "nextjs",
+            "tailwindcss",
+            "framer motion",
+            "crypto payments",
+            "p2p",
+            "stablecoins",
+            "subscription payments",
+            "invoices",
+            "webhooks",
+            "blockchain backend",
+            "real-time notifications",
+            "automation"
+          ]
+        }, 
+        {
+          "title": "Enhanced Key Management System (KMS)",
+          "link": "https://github.com/preyanshu/amaci_key_managerimage.png",
+          "liveLink": "https://kms.preyanshu.me",
+          "description": "a browser-based key management system that enhances security and usability by encrypting private keys with aes, generating elliptic curve key pairs, and securely storing them in indexeddb. features include password-protected key retrieval, toggling key status, secure deletion, message signing, and real-time indexeddb management, ensuring strong encryption, sandboxed storage, and csp-compliant operations.",
+          "photos": [
+            "./projects/kms/img.png"
+          ],
+          "tags": [
+            "react",
+            "nextjs",
+            "tailwindcss",
+            "indexeddb",
+            "cryptojs",
+            "aes",
+            "pbkdf2",
+            "ecc",
+            "key management",
+            "browser security",
+            "encryption",
+            "message signing"
+          ]
+        },
+        {
+          "title": "DecentralizedGameForge",
+          "link": "https://github.com/preyanshu/decentralizedgameforge",
+          "liveLink": "https://decentralizedgameforge.vercel.app",
+          "description": "a decentralized platform empowering developers and communities to collaboratively create, fund, and govern blockchain-based games. features include decentralized game creation, proposal mechanism with on-chain voting, crowdfunding integration, transparent governance, and scalable secure architecture. the platform introduces a token economy, premium governance tools, and future goals such as nft marketplace and ai-powered proposals.",
+          "photos": [
+            "./projects/decentralizedgameforge/img.png",
+            "./projects/decentralizedgameforge/img2.png",
+            "./projects/decentralizedgameforge/img3.png",
+            "./projects/decentralizedgameforge/img4.png",
+            "./projects/decentralizedgameforge/img5.png",
+            "./projects/decentralizedgameforge/img6.png",
+            "./projects/decentralizedgameforge/img7.png",
+            "./projects/decentralizedgameforge/img8.png",
+            "./projects/decentralizedgameforge/img9.png"
+          ],
+          "tags": [
+            "blockchain",
+            "web3",
+            "gaming",
+            "crowdfunding",
+            "dao governance",
+            "smart contracts",
+            "nft",
+            "decentralized apps",
+            "community-driven",
+            "open source"
+          ]
+        } , 
+
+        {
+          "title": "TrophyMint",
+          "link": "https://github.com/preyanshu/TrophyMint",
+          "liveLink": "https://dscvr.one/post/1201336802623881354",
+          "description": "a social-media integrated nft reward platform built on solana, enabling users to mint rare achievement-based nfts with limited supply. features include wallet connection, personalized dashboards with leaderboards, profile-linked nft achievements, supply tracking, and exclusive rewards. built with react + vite frontend, dscvr sdk/api integration, metaplex core standard for nft minting, and rust-based anchor smart contracts for secure and scalable operations.",
+          "photos": [
+            "./projects/trophymint/img.png"
+          ],
+          "tags": [
+            "react",
+            "vite",
+            "tailwindcss",
+            "solana",
+            "anchor",
+            "rust",
+            "metaplex",
+            "dscvr sdk",
+            "dscvr api",
+            "nft",
+            "social media integration",
+            "leaderboard",
+            "smart contracts"
+          ]
+        }
+        
+        
+        
+        
+        
+        
+               
+      ]
+    },
+    "cool-things": {
+      "title": "cool things i post",
+      "items": [
+        {
+          "title": "how cex deposit/withdrawal infrastructure actually works",
+          "link": "https://x.com/Preyanshu2005/status/1962280249938636907",
+          "date": "2024-09-01",
+          "description": "ever wondered what happens when you deposit or withdraw from a centralized exchange (cex)? deep dive into deposit wallets, indexers, hot/cold wallets, and the complete withdrawal flow."
+        },
+        {
+          "title": "smart contracts on ethereum are immutable - so how do upgradeable contracts exist?",
+          "link": "https://x.com/Preyanshu2005/status/1961387137913545013",
+          "date": "2024-08-29",
+          "description": "thread exploring the paradox of immutable smart contracts and how upgradeable contracts actually work in the evm ecosystem."
+        },
+        {
+          "title": "why do people still say mongodb doesn't scale? like... bro. ever heard of sharding?",
+          "link": "https://x.com/Preyanshu2005/status/1930610059370791023",
+          "date": "2024-06-05",
+          "description": "thread debunking the myth that mongodb doesn't scale, highlighting sharding and other scaling solutions that make it enterprise-ready."
+        },
+        {
+          "title": "why verifying payments on evm is surprisingly hard",
+          "link": "https://x.com/Preyanshu2005/status/1928443913712361677",
+          "date": "2024-05-30",
+          "description": "building a web3 payment gateway revealed the deeper challenge: proving a payment happened is easy, but proving why it happened is surprisingly hard. deep dive into evm payment verification complexities."
+        }
+        
+
+      ]
+    },
+    "experience": {
+      "title": "journey till now",
+      "items": [
+        {
+          "title": "contributor",
+          "company": "andromeda protocol",
+          "period": "aug 2024 - present",
+          "description": "involved in building core protocol apps, working across stack on schema builders and on-chain data tools with focus on scalable design and smooth ux.",
+          "logo": "./image.png"
+        },
+        {
+          "title": "analyst",
+          "company": "wells fargo",
+          "period": "jun 2025 - aug 2025",
+          "description": "drove automation across hrbb ci/cd pipelines, built playwright suites in c#, and streamlined deployments with devops. offered ppo for performance.",
+          "logo": "./wellsfargo.png"
+        },
+        {
+          "title": "developer",
+          "company": "heliverse tech solutions",
+          "period": "may 2024 - jul 2024",
+          "description": "shifted core apps to next.js, optimized state management, and deployed resilient systems with aws lambda and dynamodb.",
+          "logo": "./heliverse.png"
+        }
+      ]
+      
+      
+      
+    },
+    "wins": {
+      "title": "wins or grants",
+      "items": [
+   
+        {
+          "title": "1st place (defi)",
+          "event": "andromeda x cracked labs buildathon",
+          "date": "2024-08-20",
+          "link": "https://www.hackerearth.com/challenges/hackathon/andromeda-flightplan",
+          "logo": "./image.png"
+        },
+        {
+          "title": "winner (honorable mention)",
+          "event": "launch.io hackathon",
+          "date": "2024-09-15",
+          "link": "https://io.net/hackathon",
+          "logo": "./launchio.png"
+        }
+
+        
+        ,
+        {
+          "title": "1st place (sonorus track)",
+          "event": "binance q4 hackathon",
+          "date": "2024-12-15",
+          "link": "https://www.bnbchain.org/en/blog/bnb-hack-2024-q4-winners-a-celebration-of-innovation",
+          "logo": "./sonorus.png"
+        },
+        {
+          "title": "3rd place (bnb q4)",
+          "event": "binance q4 hackathon",
+          "date": "2024-12-15",
+          "link": "https://www.bnbchain.org/en/hackathons/bnbhack-q4-2024?tab=winners",
+          "logo": "./binance.png"
+        },
+        {
+          "title": "1st place (solana foundation)",
+          "event": "dscvr hackathon",
+          "date": "2024-11-20",
+          "link": "https://dorahacks.io/hackathon/dscvr1/buidl",
+          "logo": "./solanafndn.png"
+        },
+        {
+          "title": "7th place (metaplex track)",
+          "event": "dscvr hackathon",
+          "date": "2024-11-20",
+          "link": "https://dorahacks.io/hackathon/dscvr1/buidl",
+          "logo": "./mplx.png"
+        },
+        {
+          "title": "1st place",
+          "event": "stellarscape explorer hackathon",
+          "date": "2024-10-15",
+          "link": "https://unstop.com/hackathons/stellerscape-explorer-hackathon-prodyogiki-nit-hamirpur-939534",
+          "logo": "./stellarscape.png"
+        },
+        {
+          "title": "grand finalist",
+          "event": "smart india hackathon (sih)",
+          "date": "2023-08-30",
+          "link": "https://www.sih.gov.in/",
+          "logo": "./sih.png"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "what they say",
+      "items": [
+        
+        {
+          "name": "sofi",
+          "position": "product, ops, blockchain, contributor at andromeda",
+          "avatar": "./sofi.png",
+          "message": "last update from preyanshu on the new schema workflow. so excited about this, it is looking amazing",
+          "date": "march 2025"
+        },
+        {
+          "name": "cody",
+          "position": "co-creator of erc721 standard, founder of bil conference",
+          "avatar": "./cody.png",
+          "message": "preyanshu, this is great work. probably need to clean some things up, but for a first go at it, this is a+ work.",
+          "date": "nov 2024"
+        },
+        {
+          "name": "cody",
+          "position": "co-creator of erc721 standard, founder of bil conference",
+          "avatar": "./cody.png",
+          "message": "oh wow!!! that's amazing!!!! you're doing great man. enjoy the holiday.",
+          "date": "nov 2024"
+        },
+         {
+           "name": "anupam",
+           "position": "executive director, hr technology at wells fargo",
+           "avatar": "./nopfp.png",
+           "message": "preyanshu is hardworking and a very quick learner. he picked up complex tasks faster than expected and delivered results efficiently.",
+           "date": "jul 2025"
+         },
+        {
+          "name": "sudhanshu",
+          "position": "manager, heliverse tech solutions",
+          "avatar": "./sudhanshu.png",
+          "message": "preyanshu was a dependable and hardworking team member during his time at heliverse. he quickly adapted to our culture and contributed positively to the team.",
+          "date": "jul 2024"
+        },
+        {
+          "name": "shailesh",
+          "position": "founder, bytebridge",
+          "avatar": "./nopfp.png",
+          "message": "Working with Preyanshu was a smooth experience. He's proactive, asks the right questions, and always finds a way to get things done efficiently",
+          "date": "march 2024"
+        }
+       
+      ]
+    }
+  },
+  "settings": {
+    "projectsPerPage": 20
+  }
+}
