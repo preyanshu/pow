@@ -429,12 +429,36 @@ export default function Home() {
                             width={400}
                             height={300}
                             className="project-photo"
+                            priority={carouselState.currentIndex === 0}
+                            loading={carouselState.currentIndex === 0 ? "eager" : "lazy"}
                           />
                         ) : (
                           <div className="project-photo-placeholder">
                             No image available
                           </div>
                         )}
+                      </div>
+                    )}
+                    
+                    {/* Preload next and previous images */}
+                    {project.photos && project.photos.length > 1 && (
+                      <div className="hidden-preload">
+                        {project.photos.map((photo, photoIndex) => {
+                          if (photoIndex === carouselState.currentIndex) return null;
+                          
+                          return (
+                            <Image
+                              key={photoIndex}
+                              src={photo}
+                              alt={`${project.title} - Preload ${photoIndex + 1}`}
+                              width={400}
+                              height={300}
+                              className="hidden"
+                              loading="eager"
+                              priority={Math.abs(photoIndex - carouselState.currentIndex) <= 1}
+                            />
+                          );
+                        })}
                       </div>
                     )}
                   </div>
@@ -742,12 +766,36 @@ export default function Home() {
                     width={1200}
                     height={800}
                     className="fullscreen-media"
+                    priority={true}
+                    loading="eager"
                   />
                 ) : (
                   <div className="fullscreen-placeholder">
                     No image available
                   </div>
                 )
+              )}
+              
+              {/* Preload adjacent images for fullscreen navigation */}
+              {fullscreenMedia.type === 'photo' && project.photos && project.photos.length > 1 && (
+                <div className="hidden-preload">
+                  {project.photos.map((photo, photoIndex) => {
+                    if (photoIndex === fullscreenMedia.currentIndex) return null;
+                    
+                    return (
+                      <Image
+                        key={photoIndex}
+                        src={photo}
+                        alt={`Fullscreen preload ${photoIndex + 1}`}
+                        width={1200}
+                        height={800}
+                        className="hidden"
+                        loading="eager"
+                        priority={Math.abs(photoIndex - fullscreenMedia.currentIndex) <= 1}
+                      />
+                    );
+                  })}
+                </div>
               )}
             </div>
             

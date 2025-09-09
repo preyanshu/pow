@@ -1537,6 +1537,19 @@ body {
   font-weight: bold;
 }
 
+/* Hidden preload images */
+.hidden-preload {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hidden-preload .hidden {
+  display: none;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
