@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { ChevronDownIcon, CheckIcon, ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import configData from '@/config/data.json';
@@ -266,11 +267,19 @@ export default function Home() {
             </div>
           </div>
           <div className="profile-pic">
-            <img 
-              src={configData.profile.image} 
-              alt="Preyanshu" 
-              className="profile-image"
-            />
+            {configData.profile.image ? (
+              <Image 
+                src={configData.profile.image} 
+                alt="Preyanshu" 
+                width={80}
+                height={80}
+                className="profile-image"
+              />
+            ) : (
+              <div className="profile-placeholder">
+                No image
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -413,11 +422,19 @@ export default function Home() {
                       </div>
                     ) : (
                       <div className="photo-container" onClick={() => handleMediaClick('photo', project.photos[carouselState.currentIndex], index, carouselState.currentIndex)}>
-                        <img 
-                          src={project.photos[carouselState.currentIndex]} 
-                          alt={`${project.title} - Image ${carouselState.currentIndex + 1}`}
-                          className="project-photo"
-                        />
+                        {project.photos && project.photos[carouselState.currentIndex] ? (
+                          <Image 
+                            src={project.photos[carouselState.currentIndex]} 
+                            alt={`${project.title} - Image ${carouselState.currentIndex + 1}`}
+                            width={400}
+                            height={300}
+                            className="project-photo"
+                          />
+                        ) : (
+                          <div className="project-photo-placeholder">
+                            No image available
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -519,7 +536,18 @@ export default function Home() {
             <div key={index} className="experience-item">
               <div className="experience-content">
                 <div className="experience-logo">
-                  <img src={job.logo} alt={`${job.company} logo`} />
+                  {job.logo ? (
+                    <Image 
+                      src={job.logo} 
+                      alt={`${job.company} logo`}
+                      width={60}
+                      height={60}
+                    />
+                  ) : (
+                    <div className="logo-placeholder">
+                      {job.company.charAt(0)}
+                    </div>
+                  )}
                 </div>
                 <div className="experience-details">
                   <div className="experience-header">
@@ -543,7 +571,18 @@ export default function Home() {
             <div key={index} className="win-item">
               <div className="win-content">
                 <div className="win-logo">
-                  <img src={win.logo} alt={`${win.event} logo`} />
+                  {win.logo ? (
+                    <Image 
+                      src={win.logo} 
+                      alt={`${win.event} logo`}
+                      width={60}
+                      height={60}
+                    />
+                  ) : (
+                    <div className="logo-placeholder">
+                      {win.event.charAt(0)}
+                    </div>
+                  )}
                 </div>
                 <div className="win-details">
                   <div className="win-header">
@@ -582,7 +621,18 @@ export default function Home() {
                 <div className="testimonial-content">
                   {isFirstMessage && (
                     <div className="testimonial-avatar">
-                      <img src={testimonial.avatar} alt={testimonial.name} />
+                      {testimonial.avatar ? (
+                        <Image 
+                          src={testimonial.avatar} 
+                          alt={testimonial.name}
+                          width={40}
+                          height={40}
+                        />
+                      ) : (
+                        <div className="avatar-placeholder">
+                          {testimonial.name.charAt(0)}
+                        </div>
+                      )}
                     </div>
                   )}
                   {!isFirstMessage && <div className="testimonial-avatar-spacer"></div>}
@@ -685,11 +735,19 @@ export default function Home() {
                   Your browser does not support the video tag.
                 </video>
               ) : (
-                <img 
-                  src={fullscreenMedia.src} 
-                  alt="Fullscreen view"
-                  className="fullscreen-media"
-                />
+                fullscreenMedia.src ? (
+                  <Image 
+                    src={fullscreenMedia.src} 
+                    alt="Fullscreen view"
+                    width={1200}
+                    height={800}
+                    className="fullscreen-media"
+                  />
+                ) : (
+                  <div className="fullscreen-placeholder">
+                    No image available
+                  </div>
+                )
               )}
             </div>
             
