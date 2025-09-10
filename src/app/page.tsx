@@ -16,7 +16,7 @@ export default function Home() {
   const [carouselControlsVisible, setCarouselControlsVisible] = useState<{[key: number]: boolean}>({});
   const [showDesktopWarning, setShowDesktopWarning] = useState(false);
   const [pendingLink, setPendingLink] = useState<string | null>(null);
-  const [fullscreenMedia, setFullscreenMedia] = useState<{type: 'video' | 'photo', src: string, projectIndex: number, currentIndex: number} | null>(null);
+  const [fullscreenMedia, setFullscreenMedia] = useState<{type: 'video' | 'photo', src: string, projectId: string, currentIndex: number} | null>(null);
   const projectsPerPage = configData.settings.projectsPerPage;
   const dropdownRef = useRef<HTMLDivElement>(null);
   const hideTimeoutRef = useRef<{[key: number]: NodeJS.Timeout}>({});
@@ -37,8 +37,8 @@ export default function Home() {
     }
   };
 
-  const handleMediaClick = (type: 'video' | 'photo', src: string, projectIndex: number, currentIndex: number) => {
-    setFullscreenMedia({ type, src, projectIndex, currentIndex });
+  const handleMediaClick = (type: 'video' | 'photo', src: string, projectId: string, currentIndex: number) => {
+    setFullscreenMedia({ type, src, projectId, currentIndex });
   };
 
   const closeFullscreen = () => {
@@ -48,7 +48,9 @@ export default function Home() {
   const navigateFullscreenMedia = (direction: 'prev' | 'next') => {
     if (!fullscreenMedia) return;
     
-    const project = projects[fullscreenMedia.projectIndex];
+    const project = projects.find(p => p.id === fullscreenMedia.projectId);
+    if (!project) return;
+    
     const hasVideo = project.video && project.video.trim() !== '';
     
     let newType = fullscreenMedia.type;
@@ -95,7 +97,7 @@ export default function Home() {
       }
     }
     
-    setFullscreenMedia({ type: newType, src: newSrc, projectIndex: fullscreenMedia.projectIndex, currentIndex: newIndex });
+    setFullscreenMedia({ type: newType, src: newSrc, projectId: fullscreenMedia.projectId, currentIndex: newIndex });
   };
 
   const filteredProjects = useMemo(() => {
@@ -437,7 +439,7 @@ export default function Home() {
                 >
                   <div className="carousel-content">
                     {hasVideo && carouselState.isVideo ? (
-                      <div className="video-container" onClick={() => handleMediaClick('video', project.video, index, 0)}>
+                      <div className="video-container" onClick={() => handleMediaClick('video', project.video, project.id, 0)}>
                         <video 
                           controls 
                           width="100%" 
@@ -449,7 +451,7 @@ export default function Home() {
                         </video>
                       </div>
                     ) : (
-                      <div className="photo-container" onClick={() => handleMediaClick('photo', project.photos[carouselState.currentIndex], index, carouselState.currentIndex)}>
+                      <div className="photo-container" onClick={() => handleMediaClick('photo', project.photos[carouselState.currentIndex], project.id, carouselState.currentIndex)}>
                         {project.photos && project.photos[carouselState.currentIndex] ? (
                           <Image 
                             src={project.photos[carouselState.currentIndex]} 
@@ -748,7 +750,9 @@ document.body.removeChild(link);
 
       {/* Fullscreen Media Modal */}
       {fullscreenMedia && (() => {
-        const project = projects[fullscreenMedia.projectIndex];
+        const project = projects.find(p => p.id === fullscreenMedia.projectId);
+        if (!project) return null;
+        
         const hasVideo = project.video && project.video.trim() !== '';
         const totalItems = (hasVideo ? 1 : 0) + (project.photos?.length || 0);
         const canNavigate = totalItems > 1;
@@ -847,7 +851,7 @@ document.body.removeChild(link);
                       setFullscreenMedia({
                         type: 'video',
                         src: project.video,
-                        projectIndex: fullscreenMedia.projectIndex,
+                        projectId: fullscreenMedia.projectId,
                         currentIndex: 0
                       });
                     }}
@@ -864,7 +868,7 @@ document.body.removeChild(link);
                       setFullscreenMedia({
                         type: 'photo',
                         src: project.photos[photoIndex],
-                        projectIndex: fullscreenMedia.projectIndex,
+                        projectId: fullscreenMedia.projectId,
                         currentIndex: photoIndex
                       });
                     }}

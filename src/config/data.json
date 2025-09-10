@@ -15,6 +15,7 @@
       "title": "proof of work",
       "projects": [ 
         {
+          "id": "schema-builder",
           "title": "wysiwyg schema builder",
          
           "liveLink": "https://schemabuilder.preyanshu.me",
@@ -52,6 +53,7 @@
         }
         ,
       {
+        "id": "vfs-explorer",
         "title": "on-chain vfs explorer",
         "link": "https://github.com/user/vfs-explorer",
         "description": "an on-chain virtual file system explorer for fast navigation through decentralized storage. it supports in-memory caching for instant access, lazy loading of nested folders, full keyboard navigation, and the ability to open predefined paths directly. designed to handle large directory structures efficiently while keeping the interface minimal and responsive.",
@@ -75,6 +77,7 @@
         ]
       },
       {
+        "id": "liquidation-indexer",
         "title": "Rust-based Solana DeFi Liquidation Detector",
         "link": "https://github.com/preyanshu/liquidation-indexer",
         "description": "rust-based liquidation indexer for drift protocol on solana using yellowstone gRPC. supports real-time liquidation detection, webhook alerts with configurable severity, and postgres integration for persistent indexing. built with focus on reliability, scalability, and extensibility for defi risk monitoring.",
@@ -97,6 +100,7 @@
       }
 ,
       {
+        "id": "datasculpt",
         "title": "DataSculpt - Decentralized AI Dataset Platform",
         "link": "https://github.com/preyanshu/datasculpt",
         "liveLink": "https://datasculpt.vercel.app",
@@ -131,6 +135,7 @@
 
        ,
         {
+          "id": "block-explorer",
           "title": "clean react block explorer component",
           "link": "https://github.com/preyanshu/listdemov2/tree/main/app",
           "liveLink": "https://block.preyanshu.me/blocklist",
@@ -154,6 +159,7 @@
           ]
         } ,
         {
+          "id": "paythree",
           "title": "PayThree – Payroll & ESOPs for web3",
           "link": "https://github.com/preyanshu/paythree",
           "liveLink": "https://hrpaythreee-rho.vercel.app/",
@@ -184,6 +190,7 @@
           ]
         } , 
         {
+          "id": "vincent-ai",
           "title": "Vincent AI – Universal Blockchain Intelligence Agent for the Sei Ecosystem",
           "link": "https://github.com/preyanshu/vincent-ai",
           "liveLink": "https://vincentagent.preyanshu.me",
@@ -215,6 +222,7 @@
           ]
         } , 
         {
+          "id": "chainpay",
           "title": "ChainPay – Peer-to-Peer Crypto Payment Platform",
           "link": "https://github.com/preyanshu/chainpay",
           "liveLink": "https://chainpay.preyanshu.me",
@@ -244,6 +252,7 @@
           ]
         }, 
         {
+          "id": "kms",
           "title": "Enhanced Key Management System (KMS)",
           "link": "https://github.com/preyanshu/amaci_key_managerimage.png",
           "liveLink": "https://kms.preyanshu.me",
@@ -267,6 +276,7 @@
           ]
         },
         {
+          "id": "gameforge",
           "title": "DecentralizedGameForge",
           "link": "https://github.com/preyanshu/decentralizedgameforge",
           "liveLink": "https://decentralizedgameforge.vercel.app",
@@ -297,6 +307,7 @@
         } , 
 
         {
+          "id": "trophymint",
           "title": "TrophyMint",
           "link": "https://github.com/preyanshu/TrophyMint",
           "liveLink": "https://dscvr.one/post/1201336802623881354",
@@ -323,6 +334,7 @@
           ]
         } , 
         {
+          "id": "pyramid-fund",
           "title": "Pyramid Fund",
           "link": "https://github.com/preyanshu/pyramid_fund",
           "liveLink": "https://pyramid-fund.vercel.app/",
@@ -351,6 +363,7 @@
           ]
         }, 
         {
+          "id": "campaign-governance",
           "title": "Campaign Governance Platform",
           "link": "https://github.com/preyanshu/CampaignChain",
           "liveLink": "https://dscvr.one/post/1201336802623881355",
@@ -377,6 +390,7 @@
         },
         
         {
+          "id": "rhythmmural",
           "title": "RhythmMural",
           "link": "https://t.me/beatverse_bot/rhythmural",
           "liveLink": "https://rhythm-mural.vercel.app",
@@ -407,6 +421,7 @@
           ]
         },
         {
+          "id": "motion-amplification",
           "title": "Motion Amplification Vibration Monitoring System",
           "link": "https://github.com/preyanshu/video_magnification",
           "description": "a vibration monitoring system that leverages eulerian and phase-based video magnification algorithms to detect subtle human and machine vibrations. features include real-time health monitoring (heart rate, respiratory rate), machinery diagnostics (engine defect detection), and motion magnification visualization. built with react frontend, flask/python for magnification and ml models, and node.js api servers for orchestration. designed for universal device compatibility across web, windows, and android.",
