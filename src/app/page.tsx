@@ -728,7 +728,13 @@ export default function Home() {
                 onClick={() => {
                   setShowDesktopWarning(false);
                   if (pendingLink) {
-                    window.open(pendingLink, '_blank');
+                    const link = document.createElement('a');
+link.href = pendingLink;
+link.target = '_blank';
+link.rel = 'noopener noreferrer';
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
                     setPendingLink(null);
                   }
                 }}
