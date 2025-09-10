@@ -268,7 +268,7 @@ export default function Home() {
           </div>
           <div className="profile-pic">
             {configData.profile.image ? (
-              <Image 
+        <Image
                 src={configData.profile.image} 
                 alt="Preyanshu" 
                 width={80}
@@ -596,7 +596,7 @@ export default function Home() {
               <div className="win-content">
                 <div className="win-logo">
                   {win.logo ? (
-                    <Image 
+          <Image
                       src={win.logo} 
                       alt={`${win.event} logo`}
                       width={60}
@@ -763,11 +763,13 @@ export default function Home() {
                   <Image 
                     src={fullscreenMedia.src} 
                     alt="Fullscreen view"
-                    width={1200}
-                    height={800}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     className="fullscreen-media"
                     priority={true}
                     loading="eager"
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 ) : (
                   <div className="fullscreen-placeholder">
@@ -787,11 +789,13 @@ export default function Home() {
                         key={photoIndex}
                         src={photo}
                         alt={`Fullscreen preload ${photoIndex + 1}`}
-                        width={1200}
-                        height={800}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         className="hidden"
                         loading="eager"
                         priority={Math.abs(photoIndex - fullscreenMedia.currentIndex) <= 1}
+                        style={{ width: 'auto', height: 'auto' }}
                       />
                     );
                   })}

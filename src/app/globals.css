@@ -463,8 +463,7 @@ body {
 
 @media (max-width: 768px) {
   .carousel-content {
-    aspect-ratio: unset;
-    height: auto;
+    height: 300px;
   }
   
   .carousel-btn {
@@ -1380,20 +1379,41 @@ body {
 
 .fullscreen-content {
   position: relative;
-  max-width: 95vw;
-  max-height: 95vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: default;
-  margin-top: -20px;
+  background: #000;
+}
+
+.fullscreen-content .fullscreen-media {
+  max-width: 100vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .fullscreen-media {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 100vw;
+  max-height: 80vh;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* Mobile fullscreen adjustments */
+@media (max-width: 768px) {
+  .fullscreen-media {
+    max-width: 100vw;
+    max-height: 80vh;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .fullscreen-close {
