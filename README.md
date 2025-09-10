@@ -1,38 +1,16 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with Next.js 15, showcasing projects, experience, and achievements with a clean, minimal design.
+A responsive portfolio website built with Next.js 15, TypeScript, and modern web technologies.
 
-## ✨ Features
-
-### 🎯 **Core Functionality**
-- **Multi-tab Navigation**: Proof of work, cool things, experience, wins, and testimonials
-- **Advanced Project Filtering**: Search and filter projects by tags with real-time updates
-- **Interactive Media Carousels**: Photo/video carousels with navigation controls
-- **Fullscreen Media Viewer**: Immersive fullscreen experience with aspect ratio preservation
-- **Responsive Design**: Optimized for desktop and mobile devices
-
-### 🎨 **Design & UX**
-- **Minimal Dark Theme**: Clean, professional aesthetic with dark color scheme
-- **Smooth Animations**: Hover effects, transitions, and interactive feedback
-- **Typography**: Custom font styling with lowercase text for modern feel
-- **Visual Hierarchy**: Clear content organization and intuitive navigation
-
-### 📱 **Responsive Features**
-- **Mobile-First Design**: Optimized layouts for all screen sizes
-- **Touch-Friendly Controls**: Swipe gestures and touch-optimized interactions
-- **Adaptive Layouts**: Content reflows seamlessly across devices
-- **Performance Optimized**: Fast loading with Next.js optimizations
-
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript
-- **Styling**: CSS with custom properties and responsive design
-- **Image Optimization**: Next.js Image component with lazy loading
+- **Styling**: CSS with custom properties
 - **State Management**: React hooks (useState, useMemo, useEffect)
-- **Data Management**: JSON-based content management
+- **Content Management**: JSON-based configuration
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -46,69 +24,39 @@ src/
     └── projects/            # Project images and media assets
 ```
 
-## 🎛️ Content Management
+## Implementation
 
-The portfolio content is managed through `src/config/data.json`, which includes:
+### Content Management
+Portfolio content is managed through `src/config/data.json`:
+- Profile information and social links
+- Project details with media, tags, and links
+- Experience timeline and achievements
+- Testimonials and configuration settings
 
-- **Profile Information**: Bio, social links, and profile image
-- **Projects**: Detailed project information with media, tags, and links
-- **Experience**: Professional experience timeline
-- **Achievements**: Awards, grants, and recognitions
-- **Testimonials**: Client and colleague feedback
-- **Settings**: Configuration for pagination and display options
+### Core Components
 
-## 🎨 Key Components
-
-### **Project Carousel**
+**Project Carousel**
 - Interactive photo/video carousels with navigation controls
 - Auto-hide controls on hover/click
-- Smooth transitions and loading states
 - Fullscreen viewing with aspect ratio preservation
 
-### **Filter System**
+**Filter System**
 - Real-time search and tag filtering
 - Applied filters display with individual removal
-- "Clear All" functionality
 - Responsive filter UI
 
-### **Fullscreen Media Viewer**
-- Immersive fullscreen experience
-- Navigation between photos and videos
+**Fullscreen Media Viewer**
 - Aspect ratio preservation (max 80vh height)
-- Black bars for unused space
+- Project ID-based navigation
 - Keyboard and click navigation
 
-### **Responsive Layout**
+**Responsive Layout**
+- Mobile-first design approach
 - Desktop: Multi-column grid layout
 - Mobile: Single-column stacked layout
-- Adaptive image sizing and spacing
 - Touch-optimized interactions
 
-## 🛠️ Development
-
-### **Getting Started**
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### **Customization**
-
-1. **Update Content**: Modify `src/config/data.json` to update portfolio content
-2. **Add Projects**: Add new projects with required fields (id, title, description, photos, tags)
-3. **Styling**: Customize `src/app/globals.css` for design changes
-4. **Images**: Add project images to `public/projects/` directory
-
-### **Project Data Structure**
+### Data Structure
 
 ```json
 {
@@ -124,61 +72,36 @@ The portfolio content is managed through `src/config/data.json`, which includes:
 }
 ```
 
-## 🎯 Key Features Implemented
+## Development
 
-### **Fullscreen Media System**
-- ✅ Aspect ratio preservation (max 80vh height)
-- ✅ Black bars for unused space
-- ✅ Project ID-based navigation (not array position)
-- ✅ Smooth transitions and loading states
-- ✅ Mobile and desktop optimization
+### Getting Started
 
-### **Filter & Search System**
-- ✅ Real-time filtering by tags and search terms
-- ✅ Applied filters display with removal buttons
-- ✅ "Clear All" functionality
-- ✅ Responsive filter UI
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### **Carousel System**
-- ✅ Photo/video carousels with navigation
-- ✅ Auto-hide controls
-- ✅ Mobile-optimized touch interactions
-- ✅ Fixed card sizes with aspect ratio preservation
+### Customization
 
-### **Responsive Design**
-- ✅ Mobile-first approach
-- ✅ Adaptive layouts for all screen sizes
-- ✅ Touch-friendly interactions
-- ✅ Performance optimizations
+1. **Update Content**: Modify `src/config/data.json`
+2. **Add Projects**: Add new projects with required fields
+3. **Styling**: Customize `src/app/globals.css`
+4. **Images**: Add project images to `public/projects/` directory
 
-## 🚀 Deployment
+## Deployment
 
-The project is optimized for deployment on Vercel:
-
-1. Connect your GitHub repository to Vercel
+Optimized for Vercel deployment:
+1. Connect GitHub repository to Vercel
 2. Configure build settings (Next.js framework)
 3. Deploy automatically on push to main branch
 
-## 📱 Browser Support
+## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome, Firefox, Safari, Edge (latest versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Built with ❤️ using Next.js 15 and modern web technologies.

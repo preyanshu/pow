@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { ChevronDownIcon, CheckIcon, ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
@@ -265,9 +265,14 @@ export default function Home() {
               <p key={index}>{line}</p>
             ))}
             <div className="links mt-[10px]">
-              <a href={configData.profile.socials.twitter} target="_blank" rel="noopener noreferrer">twitter</a>
-              <span className="separator">.</span>
-              <a href={configData.profile.socials.github} target="_blank" rel="noopener noreferrer">github</a>
+              {Object.entries(configData.profile.socials).map(([platform, url], index) => (
+                <React.Fragment key={platform}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">{platform}</a>
+                  {index < Object.entries(configData.profile.socials).length - 1 && (
+                    <span className="separator">.</span>
+                  )}
+                </React.Fragment>
+              ))}
             </div>
           </div>
           <div className="profile-pic">
