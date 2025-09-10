@@ -366,6 +366,34 @@ export default function Home() {
                </div>
       </div>
       
+      {/* Applied Filters Display - Below the dropdown */}
+      {selectedTags.length > 0 && !selectedTags.includes('all') && (
+        <div className="applied-filters-container">
+          <div className="applied-filters">
+            <div className="applied-filters-tags">
+              {selectedTags.map(tag => (
+                <div key={tag} className="applied-filter-tag">
+                  <span>{tag}</span>
+                  <button 
+                    onClick={() => handleTagToggle(tag)}
+                    className="remove-filter-btn"
+                    aria-label={`Remove ${tag} filter`}
+                  >
+                    ×
+                  </button>
+                </div>
+              ))}
+            </div>
+            <button 
+              onClick={() => setSelectedTags(['all'])}
+              className="clear-all-btn"
+            >
+              clear all
+            </button>
+          </div>
+        </div>
+      )}
+      
               <main>
           {paginatedProjects.map((project, index) => {
             const carouselState = getCarouselState(index);
