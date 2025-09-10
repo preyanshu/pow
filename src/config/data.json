@@ -22,7 +22,7 @@
           "liveLink": "https://schemabuilder.preyanshu.me",
           "desktopOnly": true,
           "description": "a wysiwyg schema builder integrated with the schema-parser backend. it dynamically generates ui schemas from json schemas and merges them with preexisting ui schemas for seamless editing. optimized for large json handling with debouncing, batching, and in-memory caching. features include lazy loading of nested structures, url-embedded folder navigation, and schema loading from files or apis. built to simplify schema-driven app development while keeping iteration fast and scalable.",
-          "video": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+        
           "photos": [
             "/projects/schema-builder/img.png",
             "/projects/schema-builder/img2.png",
@@ -103,8 +103,10 @@
       {
         "id": "datasculpt",
         "title": "datasculpt - decentralized ai dataset platform",
+        "desktopOnly": true,
         "link": "https://github.com/preyanshu/datasculpt",
         "liveLink": "https://datasculpt.preyanshu.me",
+        "video": "/projects/datasculpt/video.mp4",
         "description": "decentralized platform on aptos for generating high-integrity ai datasets, where users design task frameworks, contributors are autonomously compensated, and a reputation layer enforces reliability and accuracy. supports csv dataset uploads, automated payouts, and real-time dashboards for both creators and workers. built to promote privacy, fairness, and transparency in collaborative data generation.",
     
         "photos": [
@@ -162,6 +164,7 @@
         {
           "id": "paythree",
           "title": "paythree – payroll & esops for web3",
+          "desktopOnly": true,
           "link": "https://github.com/preyanshu/paythree",
           "liveLink": "http://pay3.preyanshu.me",
           "video": "/projects/paythree/video.mp4",
@@ -194,6 +197,7 @@
         {
           "id": "vincent-ai",
           "title": "vincent ai – universal blockchain intelligence agent for the sei ecosystem",
+          "desktopOnly": true,
           "link": "https://github.com/preyanshu/vincent-ai",
           "liveLink": "https://vincentagent.preyanshu.me",
           "video": "/projects/vincent/video.mp4",
@@ -281,6 +285,7 @@
         {
           "id": "gameforge",
           "title": "decentralizedgameforge",
+          "desktopOnly": true,
           "link": "https://github.com/preyanshu/decentralizedgameforge",
           "liveLink": "https://gameforge.preyanshu.me",
           "video": "/projects/decentralizedgameforge/video.mp4",
@@ -340,6 +345,7 @@
         {
           "id": "pyramid-fund",
           "title": "pyramid fund",
+          "desktopOnly": true,
           "link": "https://github.com/preyanshu/pyramid_fund",
           "liveLink": "https://pyramid.preyanshu.me",
           "description": "a web3-powered referral-based crowdfunding platform that creates a pyramid of faith, allowing users to launch campaigns, contribute with referral links, and earn multi-level rewards. features include campaign creation, referral-based contributions, automated reward distribution, fund withdrawal, exponential network growth, and transparent blockchain-based transactions. built with react frontend, xion testnet smart contracts, and account-abstraction for gasless contributions.",
