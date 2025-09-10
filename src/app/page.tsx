@@ -144,7 +144,9 @@ export default function Home() {
   };
 
   const getCarouselState = (projectIndex: number) => {
-    return carouselStates[projectIndex] || { currentIndex: 0, isVideo: false };
+    const project = projects[projectIndex];
+    const hasVideo = project && project.video && project.video.trim() !== '';
+    return carouselStates[projectIndex] || { currentIndex: 0, isVideo: hasVideo };
   };
 
   const updateCarouselState = (projectIndex: number, updates: Partial<{currentIndex: number, isVideo: boolean}>) => {

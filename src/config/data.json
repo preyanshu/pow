@@ -1,8 +1,8 @@
 {
   "profile": {
-    "name": "Hi, I'm Preyanshu",
+    "name": "hi, i'm preyanshu",
     "bio": [
-      "Building crypto infrastructure. Shipping products that matter."
+      "building crypto infrastructure ,shipping products that matter."
     ],
     "image": "https://pbs.twimg.com/profile_images/1957678327575244801/gx86xvds_400x400.jpg",
     "socials": {
@@ -78,9 +78,9 @@
       },
       {
         "id": "liquidation-indexer",
-        "title": "Rust-based Solana DeFi Liquidation Detector",
+        "title": "rust-based solana defi liquidation detector",
         "link": "https://github.com/preyanshu/liquidation-indexer",
-        "description": "rust-based liquidation indexer for drift protocol on solana using yellowstone gRPC. supports real-time liquidation detection, webhook alerts with configurable severity, and postgres integration for persistent indexing. built with focus on reliability, scalability, and extensibility for defi risk monitoring.",
+        "description": "rust-based liquidation indexer for drift protocol on solana using yellowstone grpc. supports real-time liquidation detection, webhook alerts with configurable severity, and postgres integration for persistent indexing. built with focus on reliability, scalability, and extensibility for defi risk monitoring.",
         "photos": [
           "/projects/liquidation-indexer/img.png",
           "/projects/liquidation-indexer/img2.png"
@@ -89,7 +89,7 @@
           "rust",
           "solana",
           "drift protocol",
-          "yellowstone gRPC",
+          "yellowstone grpc",
           "blockchain backend",
           "postgres",
           "webhooks",
@@ -101,7 +101,7 @@
 ,
       {
         "id": "datasculpt",
-        "title": "DataSculpt - Decentralized AI Dataset Platform",
+        "title": "datasculpt - decentralized ai dataset platform",
         "link": "https://github.com/preyanshu/datasculpt",
         "liveLink": "https://datasculpt.preyanshu.me",
         "description": "decentralized platform on aptos for generating high-integrity ai datasets, where users design task frameworks, contributors are autonomously compensated, and a reputation layer enforces reliability and accuracy. supports csv dataset uploads, automated payouts, and real-time dashboards for both creators and workers. built to promote privacy, fairness, and transparency in collaborative data generation.",
@@ -160,7 +160,7 @@
         } ,
         {
           "id": "paythree",
-          "title": "PayThree – Payroll & ESOPs for web3",
+          "title": "paythree – payroll & esops for web3",
           "link": "https://github.com/preyanshu/paythree",
           "liveLink": "http://pay3.preyanshu.me",
           "video": "/projects/paythree/video.mp4",
@@ -192,11 +192,11 @@
         } , 
         {
           "id": "vincent-ai",
-          "title": "Vincent AI – Universal Blockchain Intelligence Agent for the Sei Ecosystem",
+          "title": "vincent ai – universal blockchain intelligence agent for the sei ecosystem",
           "link": "https://github.com/preyanshu/vincent-ai",
           "liveLink": "https://vincentagent.preyanshu.me",
           "video": "/projects/vincent/video.mp4",
-          "description": "blockchain intelligence agent for the Sei ecosystem, enabling real-time wallet analysis, memecoin research, automated monitoring, and safe transactions with AI-powered insights. integrates 50+ tools natively for Sei to provide multi-source intelligence fusion, persistent AI research, smart transaction execution, and advanced monitoring jobs with logs and optimization.",
+          "description": "blockchain intelligence agent for the sei ecosystem, enabling real-time wallet analysis, memecoin research, automated monitoring, and safe transactions with ai-powered insights. integrates 50+ tools natively for sei to provide multi-source intelligence fusion, persistent ai research, smart transaction execution, and advanced monitoring jobs with logs and optimization.",
           "photos": [
             "/projects/vincent/img.png",
             "/projects/vincent/img2.png",
@@ -225,7 +225,7 @@
         } , 
         {
           "id": "chainpay",
-          "title": "ChainPay – Peer-to-Peer Crypto Payment Platform",
+          "title": "chainpay – peer-to-peer crypto payment platform",
           "link": "https://github.com/preyanshu/chainpay",
           "liveLink": "https://chainpay.preyanshu.me",
           "description": "chainpay is a truly peer-to-peer crypto payment platform for freelancers, businesses, and developers. it eliminates intermediaries by enabling direct on-chain transactions, offering full ownership, instant settlement, and complete transparency. supports branded payment links, auto-generated invoices, automated reminders, multiple tokens, real-time on-chain detection, and webhook-based custom automation.",
@@ -255,7 +255,7 @@
         }, 
         {
           "id": "kms",
-          "title": "Enhanced Key Management System (KMS)",
+          "title": "enhanced key management system (kms)",
           "link": "https://github.com/preyanshu/amaci_key_manager",
           "liveLink": "https://kms.preyanshu.me",
           "description": "a browser-based key management system that enhances security and usability by encrypting private keys with aes, generating elliptic curve key pairs, and securely storing them in indexeddb. features include password-protected key retrieval, toggling key status, secure deletion, message signing, and real-time indexeddb management, ensuring strong encryption, sandboxed storage, and csp-compliant operations.",
@@ -279,7 +279,7 @@
         },
         {
           "id": "gameforge",
-          "title": "DecentralizedGameForge",
+          "title": "decentralizedgameforge",
           "link": "https://github.com/preyanshu/decentralizedgameforge",
           "liveLink": "https://gameforge.preyanshu.me",
           "video": "/projects/decentralizedgameforge/video.mp4",
@@ -311,7 +311,7 @@
 
         {
           "id": "trophymint",
-          "title": "TrophyMint",
+          "title": "trophymint",
           "link": "https://github.com/preyanshu/TrophyMint",
           "liveLink": "https://dscvr.one/post/1201336802623881354",
           "description": "a social-media integrated nft reward platform built on solana, enabling users to mint rare achievement-based nfts with limited supply. features include wallet connection, personalized dashboards with leaderboards, profile-linked nft achievements, supply tracking, and exclusive rewards. built with react + vite frontend, dscvr sdk/api integration, metaplex core standard for nft minting, and rust-based anchor smart contracts for secure and scalable operations.",
@@ -338,7 +338,7 @@
         } , 
         {
           "id": "pyramid-fund",
-          "title": "Pyramid Fund",
+          "title": "pyramid fund",
           "link": "https://github.com/preyanshu/pyramid_fund",
           "liveLink": "https://pyramid.preyanshu.me",
           "description": "a web3-powered referral-based crowdfunding platform that creates a pyramid of faith, allowing users to launch campaigns, contribute with referral links, and earn multi-level rewards. features include campaign creation, referral-based contributions, automated reward distribution, fund withdrawal, exponential network growth, and transparent blockchain-based transactions. built with react frontend, xion testnet smart contracts, and account-abstraction for gasless contributions.",
@@ -367,7 +367,7 @@
         }, 
         {
           "id": "campaign-governance",
-          "title": "Campaign Governance Platform",
+          "title": "campaign governance platform",
           "link": "https://github.com/preyanshu/CampaignChain",
           "liveLink": "https://dscvr.one/post/1201336802623881355",
           "description": "a decentralized campaign management platform built on solana, enabling users to create one campaign per wallet, manage donations, and securely withdraw funds. features include single-campaign restriction per wallet, transparent on-chain donation tracking, fund withdrawal, and alignment with solana governance standards. built with react + vite frontend and anchor-based solana smart contracts for secure, scalable, and decentralized operations.",
@@ -394,7 +394,7 @@
         
         {
           "id": "rhythmmural",
-          "title": "RhythmMural",
+          "title": "rhythmmural",
           "link": "https://github.com/preyanshu/RhythmMural",
           "liveLink": "https://t.me/beatverse_bot/rhythmural",
           "description": "a decentralized, community-driven music contest telegram mini-app where users create daily theme-based tracks, vote on favorites, and earn rewards. features include ai-powered music generation, community voting, nft minting for winning tracks, automated reward distribution, and transparent on-chain engagement. rewards are shared by both creators and voters, with winning tracks forming part of a permanent, community-curated musical mural. built with react + next frontend, solidity smart contracts, and ethers/web3 integration.",
@@ -425,7 +425,7 @@
         },
         {
           "id": "motion-amplification",
-          "title": "Motion Amplification Vibration Monitoring System",
+          "title": "motion amplification vibration monitoring system",
           "link": "https://github.com/preyanshu/video_magnification",
           "description": "a vibration monitoring system that leverages eulerian and phase-based video magnification algorithms to detect subtle human and machine vibrations. features include real-time health monitoring (heart rate, respiratory rate), machinery diagnostics (engine defect detection), and motion magnification visualization. built with react frontend, flask/python for magnification and ml models, and node.js api servers for orchestration. designed for universal device compatibility across web, windows, and android.",
           "photos": [
@@ -633,7 +633,7 @@
           "name": "shailesh",
           "position": "founder, bytebridge",
           "avatar": "/nopfp.png",
-          "message": "Working with Preyanshu was a smooth experience. He's proactive, asks the right questions, and always finds a way to get things done efficiently",
+          "message": "working with preyanshu was a smooth experience. he's proactive, asks the right questions, and always finds a way to get things done efficiently",
           "date": "march 2024"
         }
        
