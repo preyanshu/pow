@@ -103,7 +103,7 @@
         "id": "datasculpt",
         "title": "DataSculpt - Decentralized AI Dataset Platform",
         "link": "https://github.com/preyanshu/datasculpt",
-        "liveLink": "https://datasculpt.vercel.app",
+        "liveLink": "https://datasculpt.preyanshu.me",
         "description": "decentralized platform on aptos for generating high-integrity ai datasets, where users design task frameworks, contributors are autonomously compensated, and a reputation layer enforces reliability and accuracy. supports csv dataset uploads, automated payouts, and real-time dashboards for both creators and workers. built to promote privacy, fairness, and transparency in collaborative data generation.",
     
         "photos": [
@@ -162,7 +162,8 @@
           "id": "paythree",
           "title": "PayThree – Payroll & ESOPs for web3",
           "link": "https://github.com/preyanshu/paythree",
-          "liveLink": "https://hrpaythreee-rho.vercel.app/",
+          "liveLink": "http://pay3.preyanshu.me",
+          "video": "/projects/paythree/video.mp4",
           "description": "payroll and esop management platform on morph evm, enabling batch payouts, automated vesting, and on-chain transparency. it streamlines payroll with employee portals, instant notifications, and borderless, bank-free settlements while leveraging morph’s low-fee infrastructure. supports hr portal, employee portal, and organization-specific smart contracts for secure and scalable payroll operations.",
           "photos": [
             "/projects/paythree/img.png",
@@ -194,6 +195,7 @@
           "title": "Vincent AI – Universal Blockchain Intelligence Agent for the Sei Ecosystem",
           "link": "https://github.com/preyanshu/vincent-ai",
           "liveLink": "https://vincentagent.preyanshu.me",
+          "video": "/projects/vincent/video.mp4",
           "description": "blockchain intelligence agent for the Sei ecosystem, enabling real-time wallet analysis, memecoin research, automated monitoring, and safe transactions with AI-powered insights. integrates 50+ tools natively for Sei to provide multi-source intelligence fusion, persistent AI research, smart transaction execution, and advanced monitoring jobs with logs and optimization.",
           "photos": [
             "/projects/vincent/img.png",
@@ -254,7 +256,7 @@
         {
           "id": "kms",
           "title": "Enhanced Key Management System (KMS)",
-          "link": "https://github.com/preyanshu/amaci_key_managerimage.png",
+          "link": "https://github.com/preyanshu/amaci_key_manager",
           "liveLink": "https://kms.preyanshu.me",
           "description": "a browser-based key management system that enhances security and usability by encrypting private keys with aes, generating elliptic curve key pairs, and securely storing them in indexeddb. features include password-protected key retrieval, toggling key status, secure deletion, message signing, and real-time indexeddb management, ensuring strong encryption, sandboxed storage, and csp-compliant operations.",
           "photos": [
@@ -279,7 +281,8 @@
           "id": "gameforge",
           "title": "DecentralizedGameForge",
           "link": "https://github.com/preyanshu/decentralizedgameforge",
-          "liveLink": "https://decentralizedgameforge.vercel.app",
+          "liveLink": "https://gameforge.preyanshu.me",
+          "video": "/projects/decentralizedgameforge/video.mp4",
           "description": "a decentralized platform empowering developers and communities to collaboratively create, fund, and govern blockchain-based games. features include decentralized game creation, proposal mechanism with on-chain voting, crowdfunding integration, transparent governance, and scalable secure architecture. the platform introduces a token economy, premium governance tools, and future goals such as nft marketplace and ai-powered proposals.",
           "photos": [
             "/projects/decentralizedgameforge/img.png",
@@ -337,7 +340,7 @@
           "id": "pyramid-fund",
           "title": "Pyramid Fund",
           "link": "https://github.com/preyanshu/pyramid_fund",
-          "liveLink": "https://pyramid-fund.vercel.app/",
+          "liveLink": "https://pyramid.preyanshu.me",
           "description": "a web3-powered referral-based crowdfunding platform that creates a pyramid of faith, allowing users to launch campaigns, contribute with referral links, and earn multi-level rewards. features include campaign creation, referral-based contributions, automated reward distribution, fund withdrawal, exponential network growth, and transparent blockchain-based transactions. built with react frontend, xion testnet smart contracts, and account-abstraction for gasless contributions.",
           "photos": [
             "/projects/pyramidfund/img.png",
@@ -392,8 +395,8 @@
         {
           "id": "rhythmmural",
           "title": "RhythmMural",
-          "link": "https://t.me/beatverse_bot/rhythmural",
-          "liveLink": "https://rhythm-mural.vercel.app",
+          "link": "https://github.com/preyanshu/RhythmMural",
+          "liveLink": "https://t.me/beatverse_bot/rhythmural",
           "description": "a decentralized, community-driven music contest telegram mini-app where users create daily theme-based tracks, vote on favorites, and earn rewards. features include ai-powered music generation, community voting, nft minting for winning tracks, automated reward distribution, and transparent on-chain engagement. rewards are shared by both creators and voters, with winning tracks forming part of a permanent, community-curated musical mural. built with react + next frontend, solidity smart contracts, and ethers/web3 integration.",
           "video": "/projects/rhythmmural/video.mp4",
           "photos": [
